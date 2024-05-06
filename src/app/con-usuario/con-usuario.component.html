@@ -1,0 +1,16 @@
+<div class="Divcontainer">
+    <h2>Usuários cadastrados:</h2>
+    
+    <div *ngFor="let usuarios of usuarios" class="DivUsuarios" >
+       
+            <ul>
+                <li>Id:         {{usuarios.id}}</li>
+                <li>Nome:       {{usuarios.nome}}</li>
+                <li>E-mail:     {{usuarios.email}}</li>
+                <li>Telefone:   {{usuarios.telefone}}</li>
+            </ul>
+         
+        <!--<FCVS-con-usuario [usuarios]="usuarios"></FCVS-con-usuario>-->
+    </div>
+</div>
+

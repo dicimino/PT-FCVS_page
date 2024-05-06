@@ -1,0 +1,11 @@
+
+
+img {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.fotos img:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }

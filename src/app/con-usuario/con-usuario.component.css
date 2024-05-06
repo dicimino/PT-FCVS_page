@@ -1,0 +1,44 @@
+ul {
+    list-style: none; /* Remove as bolinhas padrão */
+  }
+
+ul li::before {
+    content: ''; /* Cria um elemento vazio antes do texto */
+    display: inline-block; /* Torna o elemento um bloco inline */
+    height: 25px; /* Altura do ícone */
+    width: 25px; /* Largura do ícone */
+    /*background-image: url('caminho-da-sua-imagem.png');  URL da imagem do ícone */
+    background-size: contain; /* Ajusta o tamanho da imagem */
+  }
+
+  li {
+    font-size: 20px;
+    background-color: #f8f9fa; /* Define a cor de fundo dos itens de lista */
+    padding: 10px; /* Espaçamento interno dos itens de lista */
+    margin-bottom: 5px; /* Espaçamento entre os itens de lista */
+  }
+
+.DivUsuarios {
+    
+    width: 50%;
+    margin: 40px;
+    border: solid 1px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 30%; 
+    margin: 10px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+}
+
+.DivContainer {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 30%; 
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}

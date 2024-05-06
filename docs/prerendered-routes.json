@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/cad-usuario",
+    "/con-usuario",
+    "/home",
+    "/mural"
+  ]
+}

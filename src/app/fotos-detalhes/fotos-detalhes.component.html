@@ -1,0 +1,42 @@
+
+<br>
+<div class="fotos" *ngIf="fotos"> 
+    <img [src]="fotos.imagePath" alt=""> 
+    <a [routerLink]="['inc-comentarios']">Incluir comentário</a> <br>
+    <a [routerLink]="['/mural',fotos.id]">Comentários da foto</a>
+    
+
+</div>
+
+<div class="fotos" *ngIf="fotos" >
+    <h2>Detalhes da Foto</h2> <br>
+    Nome do arquivo: <h3>{{fotos.id}}</h3>
+    Autor : <h3>{{fotos.usuario}}</h3>
+    Caminho : <h3>{{fotos.imagePath}}</h3>
+</div>
+
+
+<div class="fotos">
+    <h2> Comentários</h2> <br>
+    <!--
+    <div *ngFor="let comentarios of comentarios" >
+        <FCVS-comentarios [comentarios]="comentarios"></FCVS-comentarios>
+    </div>
+
+    <p>
+        {{comentarios.usuario}} disse: {{comentarios.conteudo}}
+    </p>
+    
+<router-outlet></router-outlet>
+    <div *ngIf="comentarios">
+        Lista de comentários:
+        <p>[comentarios]="comentarios"</p>
+      
+ 
+        <div *ngFor="let comentarios of comentarios | async">
+            <p>
+                {{comentarios.usuario}} disse: {{comentarios.conteudo}}
+            </p>
+        </div>
+        -->
+</div>

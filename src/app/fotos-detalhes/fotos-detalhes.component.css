@@ -1,0 +1,25 @@
+img {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+   /*
+.fotos img:hover{
+ 
+    transform: scale(1.05);
+    transition: transform 0.5s;
+
+  }
+      */
+
+.fotos {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 30%; 
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: solid 1px;
+}
+

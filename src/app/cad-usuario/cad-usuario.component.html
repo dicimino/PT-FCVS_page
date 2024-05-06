@@ -1,0 +1,48 @@
+
+
+<main class="cadastro-usuarios">
+
+    <!--
+    {{form.valid}}
+    {{form.value | json}}
+-->
+
+    <form #form="ngForm" novalidate>
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome" #iptNome="ngModel" ngModel cid="nome" class="input-padrao" required minlength="1" placeholder="Seu Nome" >
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" #iptEmail="ngModel" ngModel id="email" class="input-padrao" required minlength="6" placeholder="email@domínio.com">
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" #iptTelefone="ngModel" ngModel id="telefone" class="input-padrao" minlength="11" maxlength="11" pattern="^[0-9]*$" required placeholder="(XX) XXXXX-XXXX">
+
+        <!--
+        <label for="mensagem">Mensagem</label>
+        <textarea name="" id="mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
+        
+        <fieldset>
+            <legend>Como prefere nosso contato?</legend>
+            <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
+            <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+            <label for="radio-whatsapp"> <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp</label>
+        </fieldset>
+        -->
+        <!--
+        <fieldset>
+            <legend>Qual horário prefere atendimento?</legend>
+            <select name="" id="">
+                <option value="">Manhã</option>
+                <option value="">Tarde</option>
+                <option value="">Noite</option>
+            </select>
+        </fieldset>
+
+        <label class="checkbox"> <input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+
+        <input  class="enviar" type="submit" value="Enviar"> 
+        -->  
+        <input [disabled]="!form.valid"  class="enviar" type="submit" value="Enviar" (click)="AcaoDoBotao(form.value)">             
+    </form>
+</main>
+
